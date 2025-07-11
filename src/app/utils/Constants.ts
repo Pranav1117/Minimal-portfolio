@@ -1,9 +1,15 @@
 // this will contain projects title desc image all the stuff that will grow in future so that ill add that here and will automatically reflect on portfolio
 
-export const Intro = {
+interface IntroProp {
+  name: string;
+  desc: string;
+  tag: string[];
+}
+
+export const Intro: IntroProp = {
   name: "Pranav",
-  desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eius ipsum maiores saepe autem porro in facilis magnam magni ea incidunt",
-  tag: "software developer",
+  desc: "I sometimes write working code...",
+  tag: ["Software Developer", "Gamer", "Open World Explorer"],
 };
 
 export const Project = [

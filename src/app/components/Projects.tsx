@@ -1,17 +1,33 @@
 "use client";
 
 import React from "react";
-import { Project } from "../utils/Constants";
 import Image from "next/image";
+import { Project } from "../utils/Constants";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 const Projects = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
   return (
     <div>
-      <h3 className="text-2xl">Stuff I built</h3>
+      <motion.h3
+        initial={{ opacity: 0, y: 40, filter: "blur(8px)" }}
+        animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="text-2xl"
+      >
+        Stuff I built
+      </motion.h3>
 
       <div className="flex overflow-x-auto flex-nowrap gap-4 mt-4 p-4 scrollbar-hide">
         {Project.map((item, index) => (
-          <div
+          <motion.div
+            initial={{ opacity: 0, y: 40, filter: "blur(8px)" }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
             key={index}
             className="h-[220px] w-[31%] shrink-0 rounded shadow overflow-hidden flex flex-col cursor-pointer group relative"
           >
@@ -38,7 +54,7 @@ const Projects = () => {
                 {item.title}
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

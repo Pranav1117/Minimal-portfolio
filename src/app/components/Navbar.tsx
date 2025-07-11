@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
+import { Edu_AU_VIC_WA_NT_Hand, Nunito, Outfit } from "next/font/google";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Edu_AU_VIC_WA_NT_Hand, Nunito, Outfit } from "next/font/google";
 
 const edu = Edu_AU_VIC_WA_NT_Hand({
   subsets: ["latin"],
@@ -52,8 +52,8 @@ const Navbar = () => {
           ? "rounded-full bg-neutral-800/70 backdrop-blur-md shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] w-[500rem] max-w-[47rem] "
           : "bg-neutral-900 w-full max-w-[52.5rem]"
       }`}
-      initial={{ y: -50, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
+      // initial={{ y: -50, opacity: 0 }}
+      // animate={{ y: 0, opacity: 1 }}
     >
       <div className= {`${edu.variable} ${nunito.variable} ${outfit.variable} text-xl `}>Wei</div>
       <div className="flex items-center space-x-4">
