@@ -49,6 +49,16 @@ const HeroSection = () => {
           {Intro.desc}
         </div>
       </div>
+      {/* ink splash besiide hero section */}
+      {/* <div>
+        <Image
+          alt="s"
+          height={300}
+          width={300}
+          src={"/images/scribble/41.png"}
+          className="filter invert brightness-50  absolute -top-10 right-30 opacity-70"
+        />
+      </div> */}
     </motion.div>
   );
 };

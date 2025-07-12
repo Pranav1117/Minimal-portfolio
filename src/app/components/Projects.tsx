@@ -29,7 +29,7 @@ const Projects = () => {
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             key={index}
-            className="backdrop-blur bg-white/5 shadow-lg rounded h-[300px] w-[31%] shrink-0 overflow-hidden cursor-pointer flex flex-col space-y-6"
+            className="backdrop-blur bg-black/20 shadow-lg rounded h-[300px] w-[31%] shrink-0 overflow-hidden cursor-pointer flex flex-col space-y-6"
           >
             {/* Image */}
             <div className="h-[50%] relative overflow-hidden">
