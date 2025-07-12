@@ -22,37 +22,27 @@ const Projects = () => {
         Stuff I built
       </motion.h3>
 
-      <div className="flex overflow-x-auto flex-nowrap gap-4 mt-4 p-4 scrollbar-hide">
+      <div className="flex overflow-x-auto flex-nowrap gap-4 mt-4 scrollbar-hide">
         {Project.map((item, index) => (
           <motion.div
             initial={{ opacity: 0, y: 40, filter: "blur(8px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             key={index}
-            className="h-[220px] w-[31%] shrink-0 rounded shadow overflow-hidden flex flex-col cursor-pointer group relative"
+            className="backdrop-blur bg-white/5 shadow-lg rounded h-[300px] w-[31%] shrink-0 overflow-hidden cursor-pointer flex flex-col space-y-6"
           >
             {/* Image */}
-            <div className="relative h-full w-full">
+            <div className="h-[50%] relative overflow-hidden">
               <Image
                 src={item.path}
                 alt={item.title}
                 fill
-                className="object-cover transition-opacity transition-transform duration-300 scale-120 hover:scale-100 group-hover:opacity-90 group-hover:scale-100"
+                className="object-cover scale-100 hover:scale-110 duration-200"
               />
-
-              {/* Text overlay that slides up from bottom */}
-              <div
-                className="
-                  absolute bottom-0 left-0 right-0 h-full flex items-center
-                  justify-center bg-gradient-to-t from-black/80 to-transparent
-                  text-white text-lg px-4 pb-4
-                  transform translate-y-full opacity-0
-                  transition-all duration-200 ease-in-out
-                  group-hover:translate-y-0 group-hover:opacity-100
-                "
-              >
-                {item.title}
-              </div>
+            </div>
+            <div className="px-3">
+              <div>{item.title}</div>
+              <div className="text-neutral-500 text-sm mt-2 break-words">{item.desc}</div>
             </div>
           </motion.div>
         ))}

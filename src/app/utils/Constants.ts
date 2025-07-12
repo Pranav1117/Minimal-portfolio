@@ -16,7 +16,7 @@ export const Project = [
   {
     name: "galley-based-port",
     title: "Gallery Based Portfolio",
-    desc: "",
+    desc: "lorem loremloremloremloremloremloremloremloremloremloremloremloremloremlorem",
     path: "/images/projects/gallery-based.png",
     stack: "",
   },
