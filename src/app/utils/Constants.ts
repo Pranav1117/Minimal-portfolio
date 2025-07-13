@@ -92,7 +92,7 @@ export const Project = [
   },
 ];
 
-interface ExperiencesProp {
+export interface ExperiencesProp {
   companyName: string;
   duration: string;
   role: string;
