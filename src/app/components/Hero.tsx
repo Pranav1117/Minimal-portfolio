@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Intro } from "../utils/Constants";
 import dynamic from "next/dynamic";
 import { easeOut, motion } from "framer-motion";

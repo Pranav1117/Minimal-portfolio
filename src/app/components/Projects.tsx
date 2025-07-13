@@ -3,14 +3,14 @@
 import React from "react";
 import Image from "next/image";
 import { Project } from "../utils/Constants";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
 const Projects = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
+  // const { ref, inView } = useInView({
+  //   triggerOnce: true,
+  //   threshold: 0.1,
+  // });
   return (
     <div>
       <motion.h3
