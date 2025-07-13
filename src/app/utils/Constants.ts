@@ -8,7 +8,7 @@ interface IntroProp {
 
 export const Intro: IntroProp = {
   name: "Pranav",
-  desc: "I sometimes write working code...",
+  desc: "Full stack developer, experience in early-stage startup's and product based firms, 9 months internship exp in early stage startups(3 + 6), now working as a backend dev in product based company",
   tag: ["Software Developer", "Gamer", "Open World Explorer"],
 };
 
@@ -19,13 +19,14 @@ export const Project = [
     desc: "Built this portfolio for hackathon, got selected in top 1% contestants qualifying for freelance opportunity",
     path: "/images/projects/gallery-based.png",
     stack: "",
+    link: "https://gallery-based-portfolio.vercel.app/",
   },
   {
     name: "greenade-landing",
     title: "Greenade Landing Page",
     desc: "Nothing to see here, just landing page",
     path: "/images/projects/greenade-landing.png",
-    stack: "",
+    stack: "https://greenade-landing-page.vercel.app/",
   },
   {
     name: "controller-landing",
@@ -33,6 +34,15 @@ export const Project = [
     desc: "Again nothing to see here, just landing page",
     path: "/images/projects/controller-landing.png",
     stack: "",
+    link: "https://controller-landing-page.vercel.app/",
+  },
+  {
+    name: "trend-aggregator",
+    title: "Trend Aggregator",
+    desc: "A webpage that shows trending topic from youtube and reddit, summarizes using Mistral's AI model to give u imp info",
+    path: "/images/projects/trend-agg.png",
+    stack: "",
+    link: "https://trend-aggregator.vercel.app/",
   },
   {
     name: "knowxt-blogs",
@@ -40,6 +50,7 @@ export const Project = [
     desc: "Site to write and upload your blogs",
     path: "/images/projects/knowxt.png",
     stack: "",
+    link: "https://knowxt.vercel.app/",
   },
   {
     name: "spiderman-landing",
@@ -47,6 +58,7 @@ export const Project = [
     desc: "Landing Page Noooo - 4",
     path: "/images/projects/spiderman-landing.png",
     stack: "",
+    link: "https://spiderman-landing-page-one.vercel.app/",
   },
   {
     name: "e-commerce",
@@ -54,6 +66,7 @@ export const Project = [
     desc: "Basic E-commerce store",
     path: "/images/projects/e-comm.png",
     stack: "",
+    link: "https://e-commerce-frontend-qtvx.onrender.com",
   },
   {
     name: "portfolio",
@@ -61,20 +74,21 @@ export const Project = [
     desc: "Old portfolio inspired by someones tweet's",
     path: "/images/projects/old-port.png",
     stack: "",
+    link: "https://portfolio-31qw.onrender.com",
   },
   {
     name: "sahara-landing",
     title: "Sahara Desert Landing Page",
-    desc: "Beginner landing page for sahara desert",
+    desc: "Beginner landing page for sahara desert, build this when I was learning CSS",
     path: "/images/projects/sahara-landing.png",
-    stack: "",
+    stack: "https://pranav1117.github.io/Sahara-desert-landing-page/",
   },
   {
     name: "clock",
     title: "Digital Clock",
-    desc: "Something that shows timing...",
+    desc: "Webpage that shows timing with customize alarm and dynamic image change based on timing",
     path: "/images/projects/clock.png",
-    stack: "",
+    stack: "https://pranav1117.github.io/Digital-Clock-js-13-Sept/",
   },
 ];
 

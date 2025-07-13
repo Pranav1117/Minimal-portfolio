@@ -31,19 +31,23 @@ const Projects = () => {
             key={index}
             className="backdrop-blur bg-black/20 shadow-lg rounded h-[300px] w-[31%] shrink-0 overflow-hidden cursor-pointer flex flex-col space-y-6"
           >
-            {/* Image */}
-            <div className="h-[50%] relative overflow-hidden">
-              <Image
-                src={item.path}
-                alt={item.title}
-                fill
-                className="object-cover scale-100 hover:scale-110 duration-200"
-              />
-            </div>
-            <div className="px-3">
-              <div>{item.title}</div>
-              <div className="text-neutral-500 text-sm mt-2 break-words">{item.desc}</div>
-            </div>
+            <a href={item.link} target="_blank" className="h-[100%]">
+              {/* Image */}
+              <div className="h-[50%] relative overflow-hidden">
+                <Image
+                  src={item.path}
+                  alt={item.title}
+                  fill
+                  className="object-cover scale-100 hover:scale-110 duration-200"
+                />
+              </div>
+              <div className="px-3 mt-4">
+                <div>{item.title}</div>
+                <div className="text-neutral-500 text-sm mt-2 break-words">
+                  {item.desc}
+                </div>
+              </div>
+            </a>
           </motion.div>
         ))}
       </div>

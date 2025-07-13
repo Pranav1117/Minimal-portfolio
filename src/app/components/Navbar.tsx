@@ -1,33 +1,15 @@
 "use client";
 
 import React from "react";
-import { Edu_AU_VIC_WA_NT_Hand, Nunito, Outfit } from "next/font/google";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { Big_Shoulders_Stencil_Display } from "next/font/google";
 import { motion } from "framer-motion";
 
-const edu = Edu_AU_VIC_WA_NT_Hand({
+const bigShouldersStencil = Big_Shoulders_Stencil_Display({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], // your selected weights
-  variable: "--font-edu",
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
-
-const nunito = Nunito({
-  subsets: ["latin"],
-  weight: ["200", "400", "600", "800", "1000"],
-  variable: "--font-nunito",
-});
-
-const outfit = Outfit({
-  subsets: ["latin"],
-  weight: ["100", "300", "500", "700", "900"],
-  variable: "--font-outfit",
-});
-
-export const metadata = {
-  title: "My App",
-  description: "Using Google Fonts in Next.js",
-};
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -55,7 +37,11 @@ const Navbar = () => {
       // initial={{ y: -50, opacity: 0 }}
       // animate={{ y: 0, opacity: 1 }}
     >
-      <div className= {`${edu.variable} ${nunito.variable} ${outfit.variable} text-xl `}>Wei</div>
+      <div
+        className={`${bigShouldersStencil.className} text-neutral-400 text-xl `}
+      >
+        Wei
+      </div>
       <div className="flex items-center space-x-4">
         <Image
           src={"/images/socials/linkedin.svg"}
