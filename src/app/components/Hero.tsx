@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+// import { useState } from "react";
 import { Intro } from "../utils/Constants";
 import dynamic from "next/dynamic";
 import { easeOut, motion } from "framer-motion";
@@ -8,8 +8,8 @@ import { useInView } from "react-intersection-observer";
 const MotionTag = dynamic(() => import("./MotionTag"), { ssr: false });
 
 const HeroSection = () => {
-  const tags = Intro.tag;
-  const [tag, setTag] = useState(tags[0]);
+  // const tags = Intro.tag;
+  // const [tag, setTag] = useState(tags[0]);
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -42,7 +42,7 @@ const HeroSection = () => {
         <div className="flex gap-4 items-center">
           <h3 className="text-4xl">{Intro.name}</h3>
           <div className="bg-neutral-800 rounded-md overflow-hidden">
-            <MotionTag>{tag}</MotionTag>
+            <MotionTag>{"Software Developer"}</MotionTag>
           </div>
         </div>
         <div className="mt-2 font-thin text-neutral-500 leading-tight">
