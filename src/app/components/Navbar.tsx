@@ -43,27 +43,36 @@ const Navbar = () => {
         Wei
       </div>
       <div className="flex items-center space-x-4">
-        <Image
-          src={"/images/socials/linkedin.svg"}
-          height={30}
-          width={30}
-          alt="linkedin"
-          className="cursor-pointer"
-        />
-        <Image
-          src={"/images/socials/github.svg"}
-          height={15}
-          width={15}
-          alt="github"
-          className="cursor-pointer"
-        />
-        <Image
-          src={"/images/socials/mail.svg"}
-          height={20}
-          width={20}
-          alt="e-mail"
-          className="cursor-pointer"
-        />
+        <a
+          href="https://www.linkedin.com/in/pranav-bavaskar-a154a5232/"
+          target="_blank"
+        >
+          <Image
+            src={"/images/socials/linkedin.svg"}
+            height={30}
+            width={30}
+            alt="linkedin"
+            className="cursor-pointer"
+          />
+        </a>
+        <a href="https://github.com/Pranav1117" target="_blank">
+          <Image
+            src={"/images/socials/github.svg"}
+            height={15}
+            width={15}
+            alt="github"
+            className="cursor-pointer"
+          />
+        </a>
+        <a href="mailto:pranavbavaskar1@gmail.com">
+          <Image
+            src={"/images/socials/mail.svg"}
+            height={20}
+            width={20}
+            alt="e-mail"
+            className="cursor-pointer"
+          />
+        </a>
       </div>
     </motion.nav>
   );
