@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`z-10 fixed top-2 left-1/2 -translate-x-1/2 flex justify-between items-center px-4 py-1 md:px-6 md:py-3 transition-all duration-300 ${
+      className={`z-10 fixed top-2 left-1/2 -translate-x-1/2 flex justify-between items-center px-4 py-2 md:px-6 md:py-3 transition-all duration-300 ${
         scrolled
           ? "rounded-full bg-neutral-800/70 backdrop-blur-md shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] w-[86%] md:w-[500rem] max-w-[47rem] "
           : "bg-neutral-900 w-[93%] md:w-full md:max-w-[52.5rem]"
