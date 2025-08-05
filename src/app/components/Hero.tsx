@@ -36,11 +36,11 @@ const HeroSection = () => {
           : { opacity: 0, y: 40, filter: "blur(8px)" }
       }
       transition={{ duration: 0.5, ease: easeOut }}
-      className="w-[100%] mt-18 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]"
+      className="w-[100%] mt-22 md:mt-18 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]"
     >
-      <div className="w-[30rem]">
+      <div className="  md:w-[30rem]">
         <div className="flex gap-4 items-center">
-          <h3 className="text-4xl">{Intro.name}</h3>
+          <h3 className="text-5xl md:text-4xl">{Intro.name}</h3>
           <div className="bg-neutral-800 rounded-md overflow-hidden">
             <MotionTag>{"Software Developer"}</MotionTag>
           </div>
