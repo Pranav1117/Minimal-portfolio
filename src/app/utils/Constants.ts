@@ -22,6 +22,14 @@ export const Project = [
     link: "https://gallery-based-portfolio.vercel.app/",
   },
   {
+    name: "makima-landing",
+    title: "Makima Landing Page",
+    desc: "Landing page of Makima (Chainsaw Man)",
+    path: "/images/projects/Makima.png",
+    stack: "",
+    link: "https://makima-landing-page-2.vercel.app/",
+  },
+  {
     name: "greenade-landing",
     title: "Greenade Landing Page",
     desc: "Nothing to see here, just landing page",
